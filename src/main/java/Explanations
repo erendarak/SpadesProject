@@ -1,0 +1,5 @@
+Card Class
+Cards of the deck will be created there. Properties such as name of the card, suit of the card and value of the card will also be implemented here.
+
+Deck Class
+The deck with 52 cards will be created here. Methods of the things that can be done with the deck like shuffle etc. will be written here.
