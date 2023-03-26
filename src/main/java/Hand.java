@@ -3,7 +3,7 @@ public class Hand {
     private Node cards;  //Cards in the linked list of the hand
     private LinkedList handDeck;  //Linked list of cards in the hand
     private int numberOfCardsATM;  //Number of cards at that time
-    private int numberOfCardsN=13;  //Number of cards normally
+    private int numberOfCardsN;  //Number of cards normally 13
 
     /**
      * Constructs the hand class for specified properties to have 13 cards for everyone.
@@ -42,6 +42,14 @@ public class Hand {
      * @param player specified player
      */
     public void showHand(Player player){
+
+    }
+
+    /**
+     * Gets the specified card from the hand to play.
+     * @param handDeck linked list of the cards in the hand
+     */
+    public void getACard(LinkedList handDeck){
 
     }
 }
