@@ -36,10 +36,4 @@ public class Deck {
 
     }
 
-    /**
-     * Sorts the hand.
-     */
-    public void sortHand(){
-
-    }
 }

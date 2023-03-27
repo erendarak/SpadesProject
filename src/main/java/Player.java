@@ -21,6 +21,14 @@ public class Player {
     }
 
     /**
+     * Displays the hand of the player.
+     * @param player specified player
+     */
+    public void showHand(Hand hand){
+
+    }
+
+    /**
      * Gets who the player is.
      * @return identity
      */

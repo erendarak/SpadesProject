@@ -37,19 +37,19 @@ public class Hand {
 
     }
 
-    /**
-     * Displays the hand of the player.
-     * @param player specified player
-     */
-    public void showHand(Player player){
-
-    }
 
     /**
      * Gets the specified card from the hand to play.
      * @param handDeck linked list of the cards in the hand
      */
     public void getACard(LinkedList handDeck){
+
+    }
+
+    /**
+     * Sorts the hand.
+     */
+    public void sortHand(){
 
     }
 }

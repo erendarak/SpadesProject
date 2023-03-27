@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd73a0eb-acc6-456d-8294-a8e3f22a9a6e" name="Changes" comment="Added Hand class and new methods to the Deck class.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Player.java" afterDir="false" />
+    <list default="true" id="bd73a0eb-acc6-456d-8294-a8e3f22a9a6e" name="Changes" comment="Added Player class and new methods.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Gameplay.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Deck.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Hand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Hand.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,7 +72,8 @@
       <workItem from="1679531722369" duration="845000" />
       <workItem from="1679600171157" duration="603000" />
       <workItem from="1679618530573" duration="3195000" />
-      <workItem from="1679786441940" duration="3198000" />
+      <workItem from="1679786441940" duration="3960000" />
+      <workItem from="1679876147548" duration="2216000" />
     </task>
     <task id="LOCAL-00001" summary="Added Card, Deck classes and an explanations file.">
       <created>1679430317737</created>
@@ -94,7 +96,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679621719461</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added Player class and new methods.">
+      <created>1679795668860</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1679795668860</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -104,6 +113,7 @@
     <MESSAGE value="Added Card, Deck classes and an explanations file." />
     <MESSAGE value="Added LinkedList, Node classes and changed the creation of the deck." />
     <MESSAGE value="Added Hand class and new methods to the Deck class." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Hand class and new methods to the Deck class." />
+    <MESSAGE value="Added Player class and new methods." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Player class and new methods." />
   </component>
 </project>
