@@ -2,22 +2,24 @@ public class Deck {
 
     private Card head;   //First element of the deck list.
     private Card tail;  //Last element of the deck list.
-    private final String[] suit; //= {"Spade", "Club", "Heart", "Diamond"};
-    private final String[] name; //= {"2", "3", "4","5", "6", "7", "8","9", "10", "J", "Q","K", "A"};;
     private int numberOfCards;  //Number of the cards in the deck at that time. Its normally 52.
 
-
     /**
-     * Constructor of the deck. (Head, tail, size)
+     * Constructs the deck (linked list).
+     * @param head head
+     * @param tail  tail
+     * @param numberOfCards numberOfCards
      */
-    public Deck() {
+    public Deck(Card head, Card tail, int numberOfCards) {
 
     }
 
     /**
-     * This method creates the deck with a nested for loop using suit and name arrays.
+     * This method creates the deck with a nested for loop for all suits and values.
+     * @param value given value
+     * @param suit  given suit
      */
-    public void addCardtoDeck(){
+    public void addCardtoDeck(int value, String suit){
 
     }
 
@@ -33,7 +35,14 @@ public class Deck {
      * Gets the first card of the deck so that Hand class can add cards to the hands of the players.
      * @return the card(node)
      */
-    public Card getFirstCardOfDeck(){
+    public Card getFirstCard(){
+
+    }
+
+    /**
+     * Deletes the first card of the deck.
+     */
+    public void deleteFirstCard(){
 
     }
 
@@ -44,5 +53,46 @@ public class Deck {
     public int getNumberOfCards() {
 
     }
+
+    /**
+     * Edits the number of the cards at the deck.
+     * @param numberOfCards
+     */
+    public void setNumberOfCards(int numberOfCards) {
+
+    }
+
+    /**
+     * Gets the first element of the deck(card).
+     * @return head
+     */
+    public Card getHead() {
+
+    }
+
+    /**
+     * Edits the first element of the deck(card).
+     * @param head
+     */
+    public void setHead(Card head) {
+
+    }
+
+    /**
+     * Gets the last element of the deck(card).
+     * @return tail
+     */
+    public Card getTail() {
+
+    }
+
+    /**
+     * Edits the first element of the deck(card).
+     * @param tail
+     */
+    public void setTail(Card tail) {
+
+    }
+
 
 }

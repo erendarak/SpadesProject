@@ -1,15 +1,18 @@
 public class Hand {
 
-    private Card head;   //First element of the hand deck list.
-    private Card tail;  //Last element of the hand deck list.
+    private Card head;   //First element of the hand list.
+    private Card tail;  //Last element of the hand list.
     private int numberOfCardsATM;  //Number of cards at that time
     private int numberOfCardsN;  //Number of cards normally 13
 
     /**
      * Constructs the hand class for specified properties to have 13 cards for everyone.
-     * @param numberOfCardsN 13
+     * @param head head
+     * @param tail  tail
+     * @param numberOfCardsATM numberOfCardsATM
+     * @param numberOfCardsN numberOfCardsN
      */
-    public Hand(int numberOfCardsN) {
+    public Hand(Card head, Card tail, int numberOfCardsATM, int numberOfCardsN) {
 
     }
 
@@ -29,6 +32,39 @@ public class Hand {
 
     }
 
+
+    /**
+     * Gets the first element of the hand(card).
+     * @return head
+     */
+    public Card getHead() {
+
+    }
+
+    /**
+     * Edits the first element of the hand(card).
+     * @param head
+     */
+    public void setHead(Card head) {
+
+    }
+
+    /**
+     * Gets the last element of the hand(card).
+     * @return tail
+     */
+    public Card getTail() {
+
+    }
+
+    /**
+     * Edits the last element of the hand(card).
+     * @param tail
+     */
+    public void setTail(Card tail) {
+
+    }
+
     /**
      * Gets the number of the cards at that moment
      * @return number of the cards at that moment
@@ -37,19 +73,18 @@ public class Hand {
 
     }
 
-
     /**
-     * Gets the specified card from the hand to play.
-     * @param handDeck linked list of the cards in the hand
-     */
-    public void getACard(Deck handDeck){
-
-    }
-
-    /**
-     * Sorts the hand.
+     * Sorts the hand from least to highest.
      */
     public void sortHand(){
+
+    }
+    /**
+     * Prints the properties of the hand.
+     * @return cards in the hand
+     */
+    @Override
+    public String toString() {
 
     }
 }

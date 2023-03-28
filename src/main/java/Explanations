@@ -3,3 +3,19 @@ Cards of the deck will be created there. Properties such as name of the card, su
 
 Deck Class
 The deck with 52 cards will be created here. Methods of the things that can be done with the deck like shuffle etc. will be written here.
+
+CardsPlayed Class
+Cards which played to the ground at that round will be store in here. Players can reach the suit at the moment etc.
+
+Hand Class
+Every player has their own 13 cards at every round. Those 13 cards will be stored in this class. Players can interact with their cards with the methods of this class.
+
+Player Class
+Type and attributes of the players will be determined here. Also some of the methods that players can do are here.
+
+Gameplay Class
+Playing the game will happen here. Starting the game, playing the first card, resuming accoring to that, who wins the round, adding the scores,
+who wins the game etc. will be determined here.
+
+Main Class
+The game will be built and run here with mostly methods of the gameplay class.
