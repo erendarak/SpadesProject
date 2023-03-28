@@ -1,7 +1,7 @@
 public class Hand {
 
-    private Node cards;  //Cards in the linked list of the hand
-    private LinkedList handDeck;  //Linked list of cards in the hand
+    private Card head;   //First element of the hand deck list.
+    private Card tail;  //Last element of the hand deck list.
     private int numberOfCardsATM;  //Number of cards at that time
     private int numberOfCardsN;  //Number of cards normally 13
 
@@ -42,7 +42,7 @@ public class Hand {
      * Gets the specified card from the hand to play.
      * @param handDeck linked list of the cards in the hand
      */
-    public void getACard(LinkedList handDeck){
+    public void getACard(Deck handDeck){
 
     }
 

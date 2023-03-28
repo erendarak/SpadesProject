@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd73a0eb-acc6-456d-8294-a8e3f22a9a6e" name="Changes" comment="Added Player class and new methods.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Gameplay.java" afterDir="false" />
+    <list default="true" id="bd73a0eb-acc6-456d-8294-a8e3f22a9a6e" name="Changes" comment="Added Gameplay class and edited some methods of the Deck, Hand and Player classes.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Card.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Deck.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Hand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Hand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LinkedList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Node.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Player.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +76,8 @@
       <workItem from="1679600171157" duration="603000" />
       <workItem from="1679618530573" duration="3195000" />
       <workItem from="1679786441940" duration="3960000" />
-      <workItem from="1679876147548" duration="2216000" />
+      <workItem from="1679876147548" duration="2457000" />
+      <workItem from="1680005806835" duration="1187000" />
     </task>
     <task id="LOCAL-00001" summary="Added Card, Deck classes and an explanations file.">
       <created>1679430317737</created>
@@ -103,7 +107,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679795668860</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added Gameplay class and edited some methods of the Deck, Hand and Player classes.">
+      <created>1679880993893</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1679880993893</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,6 +125,7 @@
     <MESSAGE value="Added LinkedList, Node classes and changed the creation of the deck." />
     <MESSAGE value="Added Hand class and new methods to the Deck class." />
     <MESSAGE value="Added Player class and new methods." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Player class and new methods." />
+    <MESSAGE value="Added Gameplay class and edited some methods of the Deck, Hand and Player classes." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Gameplay class and edited some methods of the Deck, Hand and Player classes." />
   </component>
 </project>

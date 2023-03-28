@@ -22,7 +22,7 @@ public class Player {
 
     /**
      * Displays the hand of the player.
-     * @param player specified player
+     * @param hand specified player
      */
     public void showHand(Hand hand){
 

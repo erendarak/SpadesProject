@@ -1,14 +1,23 @@
 public class Deck {
 
+    private Card head;   //First element of the deck list.
+    private Card tail;  //Last element of the deck list.
     private final String[] suit; //= {"Spade", "Club", "Heart", "Diamond"};
-    private final String[] name; //= {"A", "2", "3", "4","5", "6", "7", "8","9", "10", "J", "Q","K"};;
+    private final String[] name; //= {"2", "3", "4","5", "6", "7", "8","9", "10", "J", "Q","K", "A"};;
     private int numberOfCards;  //Number of the cards in the deck at that time. Its normally 52.
-    private LinkedList cards;  //Linked List of all the cards
+
 
     /**
-     * Constructor of the deck. 52 cards will be added to the deck.
+     * Constructor of the deck. (Head, tail, size)
      */
     public Deck() {
+
+    }
+
+    /**
+     * This method creates the deck with a nested for loop using suit and name arrays.
+     */
+    public void addCardtoDeck(){
 
     }
 
@@ -24,7 +33,7 @@ public class Deck {
      * Gets the first card of the deck so that Hand class can add cards to the hands of the players.
      * @return the card(node)
      */
-    public Node getFirstCardOfDeck(){
+    public Card getFirstCardOfDeck(){
 
     }
 
