@@ -14,6 +14,14 @@ public class CardsPlayed {
     }
 
     /**
+     * Gets a card from the hand of the player,which will be played.
+     * @param hand player's hand
+     */
+    public void addCardToGround(Hand hand){
+
+    }
+
+    /**
      * Gets the first card played to the ground.
      * @return head
      */

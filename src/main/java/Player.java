@@ -19,10 +19,10 @@ public class Player {
 
     /**
      * Plays a card in its hand with the getACard method in hand class.
-     * @param hand given hand
-     * @param cardsPlayed list of cards played
+     * @param hand from specified hand
+     * @return played card
      */
-    public void playACard(Hand hand, CardsPlayed cardsPlayed){
+    public Card playACard(Hand hand){
 
     }
 

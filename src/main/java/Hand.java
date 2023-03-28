@@ -20,7 +20,7 @@ public class Hand {
      * Adds card to the hand with the getFirstCardOfDeck method of the given deck.
      * @param deck given deck
      */
-    public void addCard(Deck deck){
+    public void addCardToHand(Deck deck){
 
     }
 
@@ -79,6 +79,16 @@ public class Hand {
     public void sortHand(){
 
     }
+
+    /**
+     * Searches for a card which is requested.
+     * @param card wanted card
+     * @return requested card
+     */
+    public Card searchCard(Card card){
+
+    }
+
     /**
      * Prints the properties of the hand.
      * @return cards in the hand
