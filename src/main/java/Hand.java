@@ -13,7 +13,10 @@ public class Hand {
      * @param numberOfCardsN numberOfCardsN
      */
     public Hand(Card head, Card tail, int numberOfCardsATM, int numberOfCardsN) {
-
+        this.head = head;
+        this.tail = tail;
+        this.numberOfCardsATM = numberOfCardsATM;
+        this.numberOfCardsN = numberOfCardsN;
     }
 
     /**
@@ -38,7 +41,7 @@ public class Hand {
      * @return head
      */
     public Card getHead() {
-
+        return head;
     }
 
     /**
@@ -46,7 +49,7 @@ public class Hand {
      * @param head
      */
     public void setHead(Card head) {
-
+        this.head=head;
     }
 
     /**
@@ -54,7 +57,7 @@ public class Hand {
      * @return tail
      */
     public Card getTail() {
-
+        return tail;
     }
 
     /**
@@ -62,7 +65,7 @@ public class Hand {
      * @param tail
      */
     public void setTail(Card tail) {
-
+        this.tail=tail;
     }
 
     /**
@@ -70,7 +73,7 @@ public class Hand {
      * @return number of the cards at that moment
      */
     public int getNumberOfCardsATM(){
-
+        return numberOfCardsATM;
     }
 
     /**

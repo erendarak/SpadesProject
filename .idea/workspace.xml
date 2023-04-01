@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd73a0eb-acc6-456d-8294-a8e3f22a9a6e" name="Changes" comment="CardsPlayed and main classes added. Methods of the Deck, Card, Hand, Play and Gameplay classes changed. New methods added. Also Explanations file updated.">
+    <list default="true" id="bd73a0eb-acc6-456d-8294-a8e3f22a9a6e" name="Changes" comment="Added methods to the CardsPlayed, Hand and Player classes.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Card.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/CardsPlayed.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CardsPlayed.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Deck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Gameplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gameplay.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Hand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Hand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Player.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +79,12 @@
       <workItem from="1680005806835" duration="3256000" />
       <workItem from="1680011391707" duration="3919000" />
       <workItem from="1680015323930" duration="4198000" />
-      <workItem from="1680028699384" duration="1663000" />
+      <workItem from="1680028699384" duration="1901000" />
+      <workItem from="1680030621796" duration="81000" />
+      <workItem from="1680035182856" duration="629000" />
+      <workItem from="1680181100418" duration="357000" />
+      <workItem from="1680191928336" duration="784000" />
+      <workItem from="1680370683512" duration="654000" />
     </task>
     <task id="LOCAL-00001" summary="Added Card, Deck classes and an explanations file.">
       <created>1679430317737</created>
@@ -128,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680019514030</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added methods to the CardsPlayed, Hand and Player classes.">
+      <created>1680030534342</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1680030534342</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,6 +156,7 @@
     <MESSAGE value="Added Gameplay class and edited some methods of the Deck, Hand and Player classes." />
     <MESSAGE value="Transformed the deck class to a linkedlist, card class to a node instead of a seperate linked list and node class." />
     <MESSAGE value="CardsPlayed and main classes added. Methods of the Deck, Card, Hand, Play and Gameplay classes changed. New methods added. Also Explanations file updated." />
-    <option name="LAST_COMMIT_MESSAGE" value="CardsPlayed and main classes added. Methods of the Deck, Card, Hand, Play and Gameplay classes changed. New methods added. Also Explanations file updated." />
+    <MESSAGE value="Added methods to the CardsPlayed, Hand and Player classes." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added methods to the CardsPlayed, Hand and Player classes." />
   </component>
 </project>

@@ -10,7 +10,8 @@ public class CardsPlayed {
      */
 
     public CardsPlayed(Card head, Card tail){
-
+        this.head=head;
+        this.tail=tail;
     }
 
     /**
@@ -26,7 +27,7 @@ public class CardsPlayed {
      * @return head
      */
     public Card getHead() {
-
+        return head;
     }
 
     /**
@@ -34,7 +35,7 @@ public class CardsPlayed {
      * @param head
      */
     public void setHead(Card head) {
-
+        this.head=head;
     }
 
     /**
@@ -42,7 +43,7 @@ public class CardsPlayed {
      * @return tail
      */
     public Card getTail() {
-
+        return tail;
     }
 
     /**
@@ -50,7 +51,7 @@ public class CardsPlayed {
      * @param tail
      */
     public void setTail(Card tail) {
-
+        this.tail=tail;
     }
 
     /**

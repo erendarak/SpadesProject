@@ -14,7 +14,10 @@ public class Player {
      * @param bid bid of the player
      */
     public Player(String identity, Hand hand, int score, int bid) {
-
+        this.identity = identity;
+        this.hand = hand;
+        this.score = score;
+        this.bid = bid;
     }
 
     /**
@@ -39,7 +42,7 @@ public class Player {
      * @return identity
      */
     public String getIdentity() {
-
+        return identity;
     }
 
     /**
@@ -47,7 +50,7 @@ public class Player {
      * @return  hand
      */
     public Hand getHand() {
-
+        return hand;
     }
 
     /**
@@ -55,7 +58,7 @@ public class Player {
      * @param hand
      */
     public void setHand(Hand hand){
-
+        this.hand=hand;
     }
 
     /**
@@ -63,7 +66,7 @@ public class Player {
      * @return score
      */
     public int getScore() {
-
+        return score;
     }
 
     /**
@@ -71,7 +74,7 @@ public class Player {
      * @param score
      */
     public void setScore(int score) {
-
+        this.score=score;
     }
 
     /**
@@ -79,7 +82,7 @@ public class Player {
      * @return
      */
     public int getBid() {
-
+        return bid;
     }
 
     /**
@@ -87,6 +90,6 @@ public class Player {
      * @param bid
      */
     public void setBid(int bid) {
-
+        this.bid=bid;
     }
 }

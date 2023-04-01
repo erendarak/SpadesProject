@@ -11,7 +11,9 @@ public class Deck {
      * @param numberOfCards numberOfCards
      */
     public Deck(Card head, Card tail, int numberOfCards) {
-
+        this.head=head;
+        this.tail=tail;
+        this.numberOfCards=numberOfCards;
     }
 
     /**
@@ -51,7 +53,7 @@ public class Deck {
      * @return numberOfCards
      */
     public int getNumberOfCards() {
-
+        return numberOfCards;
     }
 
     /**
@@ -59,7 +61,7 @@ public class Deck {
      * @param numberOfCards
      */
     public void setNumberOfCards(int numberOfCards) {
-
+        this.numberOfCards=numberOfCards;
     }
 
     /**
@@ -67,7 +69,7 @@ public class Deck {
      * @return head
      */
     public Card getHead() {
-
+        return head;
     }
 
     /**
@@ -75,7 +77,7 @@ public class Deck {
      * @param head
      */
     public void setHead(Card head) {
-
+        this.head=head;
     }
 
     /**
@@ -83,7 +85,7 @@ public class Deck {
      * @return tail
      */
     public Card getTail() {
-
+        return tail;
     }
 
     /**
@@ -91,7 +93,7 @@ public class Deck {
      * @param tail
      */
     public void setTail(Card tail) {
-
+        this.tail=tail;
     }
 
 

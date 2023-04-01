@@ -13,8 +13,13 @@ public class Gameplay {
      * @param deck  deck of the game
      * @param cardsPlayed cards played to the ground that round
      */
-    public Gameplay(Player computer1, Player computer2, Player computer3, Player realPlayer, Deck deck, CardsPlayed cardsPlayed){
-
+    public Gameplay(Player computer1, Player computer2, Player computer3, Player realPlayer, Deck deck, CardsPlayed cardsPlayed) {
+        this.computer1 = computer1;
+        this.computer2 = computer2;
+        this.computer3 = computer3;
+        this.realPlayer = realPlayer;
+        this.deck = deck;
+        this.cardsPlayed = cardsPlayed;
     }
 
     /**
@@ -22,7 +27,7 @@ public class Gameplay {
      * @return computer1
      */
     public Player getComputer1() {
-
+        return computer1;
     }
 
     /**
@@ -30,7 +35,7 @@ public class Gameplay {
      * @param computer1
      */
     public void setComputer1(Player computer1) {
-
+        this.computer1=computer1;
     }
 
     /**
@@ -38,7 +43,7 @@ public class Gameplay {
      * @return  computer2
      */
     public Player getComputer2() {
-
+        return computer2;
     }
 
     /**
@@ -46,7 +51,7 @@ public class Gameplay {
      * @param computer2
      */
     public void setComputer2(Player computer2) {
-
+        this.computer2=computer2;
     }
 
     /**
@@ -54,7 +59,7 @@ public class Gameplay {
      * @return computer3
      */
     public Player getComputer3() {
-
+        return computer3;
     }
 
     /**
@@ -62,7 +67,7 @@ public class Gameplay {
      * @param computer3
      */
     public void setComputer3(Player computer3) {
-
+        this.computer3=computer3;
     }
 
     /**
@@ -70,7 +75,7 @@ public class Gameplay {
      * @return
      */
     public Player getRealPlayer() {
-
+        return realPlayer;
     }
 
     /**
@@ -78,7 +83,7 @@ public class Gameplay {
      * @param realPlayer
      */
     public void setRealPlayer(Player realPlayer) {
-
+        this.realPlayer=realPlayer;
     }
 
     /**
@@ -86,7 +91,7 @@ public class Gameplay {
      * @return deck
      */
     public Deck getDeck() {
-
+        return deck;
     }
 
     /**
@@ -94,7 +99,7 @@ public class Gameplay {
      * @param deck
      */
     public void setDeck(Deck deck) {
-
+        this.deck=deck;
     }
 
     /**
@@ -102,7 +107,7 @@ public class Gameplay {
      * @return cardsPlayed
      */
     public CardsPlayed getCardsPlayed() {
-
+        return cardsPlayed;
     }
 
     /**
@@ -110,7 +115,7 @@ public class Gameplay {
      * @param cardsPlayed
      */
     public void setCardsPlayed(CardsPlayed cardsPlayed) {
-
+        this.cardsPlayed=cardsPlayed;
     }
 
     /**

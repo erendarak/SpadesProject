@@ -13,7 +13,10 @@ public class Card {
      * @param nextCard  pointer to the next card.
      */
     public Card(String cardName, int cardValue, String cardSuit, Card nextCard) {
-
+        this.cardName=cardName;
+        this.cardValue=cardValue;
+        this.cardSuit=cardSuit;
+        this.nextCard=nextCard;
     }
 
     /**
@@ -21,7 +24,7 @@ public class Card {
      * @return nextCard
      */
     public Card getNextCard() {
-
+        return nextCard;
     }
 
     /**
@@ -29,7 +32,7 @@ public class Card {
      * @param nextCard
      */
     public void setNextCard(Card nextCard) {
-
+        this.nextCard = nextCard;
     }
 
     /**
@@ -37,7 +40,7 @@ public class Card {
      * @return cardName
      */
     public String getCardName() {
-
+        return cardName;
     }
 
     /**
@@ -45,7 +48,7 @@ public class Card {
      * @return cardValue
      */
     public int getCardValue() {
-
+        return cardValue;
     }
 
     /**
@@ -53,7 +56,7 @@ public class Card {
      * @return cardSuit
      */
     public String getCardSuit() {
-
+        return cardSuit;
     }
 
     /**
@@ -62,6 +65,6 @@ public class Card {
      */
     @Override
     public String toString() {
-
+        return "Name: " + cardName + "\n" + "Value: " + cardValue + "\n" + "Suit: " + cardSuit;
     }
 }
