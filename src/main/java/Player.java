@@ -26,7 +26,7 @@ public class Player {
      * @return played card
      */
     public Card playACard(Hand hand){
-
+        return null;
     }
 
     /**

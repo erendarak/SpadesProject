@@ -89,7 +89,7 @@ public class Hand {
      * @return requested card
      */
     public Card searchCard(Card card){
-
+        return null;
     }
 
     /**
@@ -98,6 +98,6 @@ public class Hand {
      */
     @Override
     public String toString() {
-
+        return null;
     }
 }

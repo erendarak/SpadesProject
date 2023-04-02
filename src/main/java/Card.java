@@ -1,8 +1,8 @@
 public class Card {
 
-    private final String cardName;  //The name of the card (Ace, King, Queen, Jack, 10, 9, 8, 7, 6, 5, 4, 3, 2)
-    private final int cardValue;  //The value of the card (Ace=14, King=13,.....,3=3, 2=2)
-    private final String cardSuit;  //The suit of the card (Hearts, Diamonds, Spades, and Clubs)
+    private String cardName;  //The name of the card (Ace, King, Queen, Jack, 10, 9, 8, 7, 6, 5, 4, 3, 2)
+    private int cardValue;  //The value of the card (Ace=14, King=13,.....,3=3, 2=2)
+    private String cardSuit;  //The suit of the card (Hearts, Diamonds, Spades, and Clubs)
     private Card nextCard;  //Pointer to the next card.
 
     /**
@@ -57,6 +57,30 @@ public class Card {
      */
     public String getCardSuit() {
         return cardSuit;
+    }
+
+    /**
+     * Edits the name of the card.
+     * @param cardName
+     */
+    public void setCardName(String cardName) {
+        this.cardName = cardName;
+    }
+
+    /**
+     * Edits the value of the card.
+     * @param cardValue
+     */
+    public void setCardValue(int cardValue) {
+        this.cardValue = cardValue;
+    }
+
+    /**
+     * Edits the suit of the card.
+     * @param cardSuit
+     */
+    public void setCardSuit(String cardSuit) {
+        this.cardSuit = cardSuit;
     }
 
     /**

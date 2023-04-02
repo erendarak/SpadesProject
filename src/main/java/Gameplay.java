@@ -160,7 +160,7 @@ public class Gameplay {
      * @return winner player of the round
      */
     public Player determineRoundWinner(){
-
+        return null;
     }
 
     /**
@@ -173,7 +173,7 @@ public class Gameplay {
     /**
      * This method determines the winner who reaches 500 points.
      */
-    public void determineGameWinner{
+    public void determineGameWinner(){
 
     }
 
