@@ -23,8 +23,29 @@ public class Hand {
      * Adds card to the hand with the getFirstCardOfDeck method of the given deck.
      * @param deck given deck
      */
-    public void addCardToHand(Deck deck){
+    public void addCardToHand(Deck deck) {
+        while (numberOfCardsATM != 13) {
+            Card current = deck.getHead();
+            int a = (int) (Math.random() * (deck.getNumberOfCards()));
+            for (int j = 0; j < a; j++) {
+                current = current.getNextCard();
+            }
+            Card c1 = new Card(current.getCardName(), current.getCardValue(), current.getCardSuit(), current.getNextCard());
+            insertFirstHand(c1);
+            numberOfCardsATM++;
+        }
+    }
 
+    /**
+     * This method adds the given card to the hand as a first element.
+     * @param newCard given card
+     */
+    public void insertFirstHand(Card newCard){
+        if (tail == null){
+            tail=newCard;
+        }
+        newCard.setNextCard(head);
+        head = newCard;
     }
 
     /**
@@ -98,6 +119,14 @@ public class Hand {
      */
     @Override
     public String toString() {
-        return null;
+        String toString = "Cards in the hand:\n";
+        Card temp = head;
+        while(temp!=null){
+            toString += temp.getCardName() + " of ";
+            toString += temp.getCardSuit() + " " + "(";
+            toString += temp.getCardValue() + ")" + "\n";
+            temp = temp.getNextCard();
+        }
+        return toString;
     }
 }

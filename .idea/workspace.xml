@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd73a0eb-acc6-456d-8294-a8e3f22a9a6e" name="Changes" comment="Added codes of the constructors, getters and setters.">
+    <list default="true" id="bd73a0eb-acc6-456d-8294-a8e3f22a9a6e" name="Changes" comment="Added codes of some methods and added &quot;return null&quot; statements in order to build the main class and try those methods.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Card.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Deck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Gameplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gameplay.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Hand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Hand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -101,7 +98,12 @@
       <workItem from="1680191928336" duration="784000" />
       <workItem from="1680370683512" duration="821000" />
       <workItem from="1680448715072" duration="9450000" />
-      <workItem from="1680464368631" duration="2509000" />
+      <workItem from="1680464368631" duration="2697000" />
+      <workItem from="1680468479666" duration="771000" />
+      <workItem from="1680483307467" duration="6176000" />
+      <workItem from="1680547930987" duration="1398000" />
+      <workItem from="1680617192890" duration="4424000" />
+      <workItem from="1680622350865" duration="2331000" />
     </task>
     <task id="LOCAL-00001" summary="Added Card, Deck classes and an explanations file.">
       <created>1679430317737</created>
@@ -166,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680371501918</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Added codes of some methods and added &quot;return null&quot; statements in order to build the main class and try those methods.">
+      <created>1680467431073</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1680467431073</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,7 +191,8 @@
     <MESSAGE value="CardsPlayed and main classes added. Methods of the Deck, Card, Hand, Play and Gameplay classes changed. New methods added. Also Explanations file updated." />
     <MESSAGE value="Added methods to the CardsPlayed, Hand and Player classes." />
     <MESSAGE value="Added codes of the constructors, getters and setters." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added codes of the constructors, getters and setters." />
+    <MESSAGE value="Added codes of some methods and added &quot;return null&quot; statements in order to build the main class and try those methods." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added codes of some methods and added &quot;return null&quot; statements in order to build the main class and try those methods." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
