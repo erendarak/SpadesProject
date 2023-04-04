@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class Deck {
 
     private Card head;   //First element of the deck list.
@@ -93,12 +95,119 @@ public class Deck {
                     new Card("A",14,"Clubs",null))))))))))))))))))))))))))))))))))))))))))))))))))));
     }
 
-
+    Random random = new Random();
     /**
      * This method will shuffle our deck in order to play the game fairly.
      */
     public void shuffle(){
+        Card c1;
+        Card c2;
+        int no;
+        for (int i =1; i < numberOfCards-1; i++){
+            no= random.nextInt(50)+1;
+            while(i==no){
+                no= random.nextInt(50)+1;
+            }
+            c1 = nthCard(i);
+            c2 = nthCard(no);
 
+            deleteMiddle(nthCard(i));
+            insertMiddle(new Card(c2.getCardName(), c2.getCardValue(), c2.getCardSuit(),c2.getNextCard()), nthCard(no-1));
+            deleteMiddle(nthCard(no));
+            insertMiddle(new Card(c1.getCardName(), c1.getCardValue(), c1.getCardSuit(),c1.getNextCard()), nthCard(no-1));
+        }
+    }
+
+    /**
+     * Adds a card to the middle of the deck.
+     * @param aCard added card
+     * @param pCard previous card
+     */
+    public void insertMiddle(Card aCard, Card pCard){
+        aCard.setNextCard(pCard.getNextCard());
+        pCard.setNextCard(aCard);
+    }
+
+    /**
+     * Returns the card which is in that index.
+     * @param n given index
+     * @return nth Card
+     */
+    public Card nthCard(int n){
+        Card temp = head;
+        int index = 0;
+        while (temp != null) {
+            if (index == n) {
+                return temp;
+            }
+            index++;
+            temp = temp.getNextCard();
+        }
+        return null;
+    }
+
+    /**
+     * Returns to the previous card of the given card.
+     * @param c given card
+     * @return  previous card
+     */
+    public Card getPrevious(Card c){
+        if(c==head){
+            return head;
+        }
+        Card temp = head;
+        Card previous = null;
+        while (temp != null) {
+            if(temp.getNextCard()==c){
+                previous = temp;
+                break;
+            }
+            temp=temp.getNextCard();
+        }
+        return previous;
+    }
+
+    /**
+     * Deletes the given card from the specific place.
+     * @param c given card
+     */
+    public void deleteMiddle(Card c){
+        Card previous = getPrevious(c);
+        if(previous==null){
+            deleteFirst();
+        }else{
+            if(c.getNextCard()==null){
+                deleteLast();
+            }
+            else{
+                previous.setNextCard(c.getNextCard());
+            }
+        }
+    }
+
+    /**
+     * Deletes the last card of the deck.
+     */
+    public void deleteLast(){
+        tail = getPrevious(tail);
+        if(tail != null){
+            tail.setNextCard(null);
+        } else {
+            head = null;
+        }
+    }
+
+    /**
+     * Deletes the first card of the deck.
+     */
+    public void deleteFirst(){
+
+        if(head == null){
+            tail = null;
+        }
+        else{
+            head=head.getNextCard();
+        }
     }
 
     /**
