@@ -68,7 +68,10 @@ public class CardsPlayed {
      * @return  suit of the last card
      */
     public String getSuitATM(){
-        return tail.getCardSuit();
+        if(tail!=null){
+            return tail.getCardSuit();
+        }
+        return null;
     }
 
     /**

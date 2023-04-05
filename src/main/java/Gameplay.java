@@ -124,22 +124,15 @@ public class Gameplay {
      */
     public void dealCards(Hand hand,String identity){
         switch (identity){
-            case "computer1":
+            case "Computer1":
                 hand.addCardToHand1(deck);
-            case "computer2":
+            case "Computer2":
                 hand.addCardToHand2(deck);
-            case "computer3":
+            case "Computer3":
                 hand.addCardToHand3(deck);
-            case "real":
+            case "Real Player":
                 hand.addCardToHand4(deck);
         }
-
-    }
-
-    /**
-     * First player plays in order to determine the first suit of the game.
-     */
-    public void firstPlayerPlays(){
 
     }
 
@@ -147,7 +140,22 @@ public class Gameplay {
      * After taking the bids, first player starts the round and every player plays a card according to the proper suit(if they have).
      */
     public void playARound(){
-
+        for(int i =0; i<13;i++){
+            if(i==0){
+                realPlayer.firstPlayerPlays(realPlayer.getHand(),cardsPlayed);
+            }
+            else{
+                realPlayer.playACard(realPlayer.getHand(),cardsPlayed);
+            }
+            computer1.playACard(computer1.getHand(),cardsPlayed);
+            computer2.playACard(computer2.getHand(),cardsPlayed);
+            computer3.playACard(computer3.getHand(),cardsPlayed);
+            determineRoundWinner();
+        }
+        arrangeScore(realPlayer);
+        arrangeScore(computer1);
+        arrangeScore(computer2);
+        arrangeScore(computer3);
     }
 
     /**
@@ -155,27 +163,72 @@ public class Gameplay {
      * @return winner player of the round
      */
     public Player determineRoundWinner(){
+        Card winnerCard = cardsPlayed.getHead();
+        int count=0;
+        if(winnerCard.getCardSuit().equals(winnerCard.getNextCard().getCardSuit())){
+            for(int i =0; i<3; i++){
+                if(winnerCard.getCardValue()<winnerCard.getNextCard().getCardValue()){
+                    winnerCard=winnerCard.getNextCard();
+                    count++;
+                }
+            }
+        }
+        else{
+            for(int i =0; i<3; i++){
+                if(winnerCard.getCardSuit().equals("Spades")){
+                }else{
+                    count++;
+                }
+            }
+        }
+        switch (count){
+            case 0:
+                realPlayer.setRoundWon(realPlayer.getRoundWon()+1);
+                return realPlayer;
+            case 1:
+                computer1.setRoundWon(computer1.getRoundWon()+1);
+                return computer1;
+            case 2:
+                computer2.setRoundWon(computer2.getRoundWon()+1);
+                return computer2;
+            case 3:
+                computer3.setRoundWon(computer3.getRoundWon()+1);
+                return computer3;
+        }
+        System.out.println("Round winner is " + this);
         return null;
     }
 
     /**
      * This method adds points to the winner player of the round according to the given rules.
      */
-    public void arrangeScore(){
-
-    }
-
-    /**
-     * This method determines the winner who reaches 500 points.
-     */
-    public void determineGameWinner(){
-
+    public void arrangeScore(Player p){
+        if(p.getBid()>p.getRoundWon()){
+            p.setScore(p.getScore()-(p.getBid()*10));
+        } else if (p.getBid() == p.getRoundWon()){
+            p.setScore(p.getScore()+(p.getBid()*10));
+        } else if (p.getBid() < p.getRoundWon()){
+            int a = p.getRoundWon()-p.getBid();
+            p.setScore(p.getScore()+(p.getBid()*10)+a);
+        }
     }
 
     /**
      * This method will finish the game if one of the players have been reached 500 points.
      */
-    public void endGame(){
-
+    public Player endGame(){
+            if(realPlayer.getScore()>computer1.getScore() && realPlayer.getScore()>computer2.getScore() && realPlayer.getScore()>computer3.getScore()){
+                return realPlayer;
+            }
+            if(computer1.getScore()>realPlayer.getScore() && computer1.getScore()>computer2.getScore() && computer1.getScore()>computer3.getScore()){
+                return computer1;
+            }
+            if(computer2.getScore()>realPlayer.getScore() && computer2.getScore()>computer1.getScore() && computer2.getScore()>computer3.getScore()){
+                return computer1;
+            }
+            if(computer3.getScore()>realPlayer.getScore() && computer3.getScore()>computer2.getScore() && computer3.getScore()>computer1.getScore()){
+                return computer1;
+            }
+            return null;
     }
 }
