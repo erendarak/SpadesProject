@@ -217,20 +217,20 @@ public class Hand {
         return numberOfCardsATM;
     }
 
-    /**
-     * Sorts the hand from least to highest.
-     */
-    public void sortHand(){
-
-    }
 
     /**
-     * Searches for a card which is requested.
-     * @param card wanted card
-     * @return requested card
+     * Searches for a card which is requested at that index.
+     * @param no given index
+     * @return  wanted card
      */
-    public Card searchCard(Card card){
-        return null;
+    public Card searchCard(int no){
+        Card searched = head;
+        if(head.getNextCard()!=null){
+            for(int i=0; i<no; i++){
+                searched=searched.getNextCard();
+            }
+        }
+        return searched;
     }
 
     /**

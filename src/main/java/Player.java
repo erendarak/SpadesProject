@@ -34,7 +34,7 @@ public class Player {
      * @param hand specified player
      */
     public void showHand(Hand hand){
-
+        System.out.println(hand.toString());
     }
 
     /**
