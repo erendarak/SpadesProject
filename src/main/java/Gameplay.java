@@ -120,24 +120,19 @@ public class Gameplay {
 
     /**
      * Deals the cards to the order.
-     * @param deck deck of the game
      * @param hand  all player's hands
      */
-    public void dealCards(Deck deck, Hand hand){
-
-    }
-
-    /**
-     * Takes the bids from the players.
-      */
-    public void takeBids(){
-
-    }
-
-    /**
-     * Puts players to an order to play the game.
-     */
-    public void arrangePlayers(){
+    public void dealCards(Hand hand,String identity){
+        switch (identity){
+            case "computer1":
+                hand.addCardToHand1(deck);
+            case "computer2":
+                hand.addCardToHand2(deck);
+            case "computer3":
+                hand.addCardToHand3(deck);
+            case "real":
+                hand.addCardToHand4(deck);
+        }
 
     }
 

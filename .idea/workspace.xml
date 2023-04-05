@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd73a0eb-acc6-456d-8294-a8e3f22a9a6e" name="Changes" comment="Added shuffle method for the deck and now the deck won't be dealt by mixed order. It will be dealt 1 by 1 from shuffled deck. And deleteCard method for the hand added in order to delete a card which is played.">
+    <list default="true" id="bd73a0eb-acc6-456d-8294-a8e3f22a9a6e" name="Changes" comment="Finished the methods of the CardsPlayed class(ground) which are addCardToGround and getSuitATM. Some methods of Player and Hand class are added and changed.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CardsPlayed.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CardsPlayed.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Hand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Hand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Deck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Gameplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gameplay.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/main.java" afterDir="false" />
     </list>
@@ -109,7 +109,8 @@
       <workItem from="1680642991452" duration="2478000" />
       <workItem from="1680645492585" duration="5058000" />
       <workItem from="1680651031533" duration="638000" />
-      <workItem from="1680698888796" duration="3703000" />
+      <workItem from="1680698888796" duration="3902000" />
+      <workItem from="1680708543750" duration="1437000" />
     </task>
     <task id="LOCAL-00001" summary="Added Card, Deck classes and an explanations file.">
       <created>1679430317737</created>
@@ -195,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680649757464</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Finished the methods of the CardsPlayed class(ground) which are addCardToGround and getSuitATM. Some methods of Player and Hand class are added and changed.">
+      <created>1680705169172</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1680705169172</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -214,6 +222,8 @@
     <MESSAGE value="Added codes of some methods and added &quot;return null&quot; statements in order to build the main class and try those methods." />
     <MESSAGE value="Added creation of the hand and adding cards to the hand" />
     <MESSAGE value="Added shuffle method for the deck and now the deck won't be dealt by mixed order. It will be dealt 1 by 1 from shuffled deck. And deleteCard method for the hand added in order to delete a card which is played." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added shuffle method for the deck and now the deck won't be dealt by mixed order. It will be dealt 1 by 1 from shuffled deck. And deleteCard method for the hand added in order to delete a card which is played." />
+    <MESSAGE value="Finished the methods of the CardsPlayed class(ground) which are addCardToGround and getSuitATM." />
+    <MESSAGE value="Finished the methods of the CardsPlayed class(ground) which are addCardToGround and getSuitATM. Some methods of Player and Hand class are added and changed." />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished the methods of the CardsPlayed class(ground) which are addCardToGround and getSuitATM. Some methods of Player and Hand class are added and changed." />
   </component>
 </project>

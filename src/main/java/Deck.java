@@ -228,6 +228,11 @@ public class Deck {
         }
     }
 
+    public int createBidForBots(){
+        int no= random.nextInt(8)+2;
+        return no;
+    }
+
     /**
      * Gets the number of the cards at the deck.
      * @return numberOfCards
