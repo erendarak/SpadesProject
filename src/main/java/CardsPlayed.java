@@ -29,6 +29,7 @@ public class CardsPlayed {
             }
             tail = x;
             x.setNextCard(null);
+            numberOfCardsATM++;
     }
 
     /**

@@ -168,11 +168,9 @@ public class Hand {
      * Deletes the first card of the deck.
      */
     public void deleteFirstHand(){
+        head=head.getNextCard();
         if(head == null){
             tail = null;
-        }
-        else{
-            head=head.getNextCard();
         }
     }
 

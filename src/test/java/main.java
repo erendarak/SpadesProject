@@ -49,6 +49,9 @@ public class main {
             boolean dontEndGame = r.getScore() <500 || c1.getScore() <500 || c2.getScore() <500 || c3.getScore() <500;
             while(dontEndGame){
                 if(dontEndGame){
+                    System.out.println("===================================================");
+                    r.showHand();
+                    System.out.println("===================================================");
                     gameplay.playARound();
                 }
                 else{

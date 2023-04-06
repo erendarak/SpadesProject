@@ -184,18 +184,30 @@ public class Gameplay {
         switch (count){
             case 0:
                 realPlayer.setRoundWon(realPlayer.getRoundWon()+1);
+                System.out.println("===================================================");
+                System.out.println("Round winner is " + realPlayer.getIdentity());
+                System.out.println("===================================================");
                 return realPlayer;
             case 1:
                 computer1.setRoundWon(computer1.getRoundWon()+1);
+                System.out.println("===================================================");
+                System.out.println("Round winner is " + computer1.getIdentity());
+                System.out.println("===================================================");
                 return computer1;
             case 2:
                 computer2.setRoundWon(computer2.getRoundWon()+1);
+                System.out.println("===================================================");
+                System.out.println("Round winner is " + computer2.getIdentity());
+                System.out.println("===================================================");
                 return computer2;
             case 3:
                 computer3.setRoundWon(computer3.getRoundWon()+1);
+                System.out.println("===================================================");
+                System.out.println("Round winner is " + computer3.getIdentity());
+                System.out.println("===================================================");
                 return computer3;
         }
-        System.out.println("Round winner is " + this);
+
         return null;
     }
 

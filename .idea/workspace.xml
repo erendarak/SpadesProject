@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd73a0eb-acc6-456d-8294-a8e3f22a9a6e" name="Changes" comment="From now on main class is not a test class. It creates the game and starts for the player. Some methods of the Deck, Gameplay and Player classes are changed and some of them is filled.">
+    <list default="true" id="bd73a0eb-acc6-456d-8294-a8e3f22a9a6e" name="Changes" comment="Added all methods to the Gameplay class, Player class and CardPlayed class.  The game has finished mostly. Some exceptional cases can happen sometimes. But the logic is correct.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/CardsPlayed.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CardsPlayed.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Gameplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gameplay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Hand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Hand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/main.java" afterDir="false" />
     </list>
@@ -111,7 +112,9 @@
       <workItem from="1680651031533" duration="638000" />
       <workItem from="1680698888796" duration="3902000" />
       <workItem from="1680708543750" duration="1680000" />
-      <workItem from="1680716829920" duration="8494000" />
+      <workItem from="1680716829920" duration="8628000" />
+      <workItem from="1680786374615" duration="5000" />
+      <workItem from="1680808184677" duration="2699000" />
     </task>
     <task id="LOCAL-00001" summary="Added Card, Deck classes and an explanations file.">
       <created>1679430317737</created>
@@ -211,11 +214,29 @@
       <option name="project" value="LOCAL" />
       <updated>1680710218409</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Added all methods to the Gameplay class, Player class and CardPlayed class.  The game has finished mostly. Some exceptional cases can happen sometimes. But the logic is correct.">
+      <created>1680725455482</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1680725455482</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added Card, Deck classes and an explanations file." />
@@ -233,6 +254,17 @@
     <MESSAGE value="Finished the methods of the CardsPlayed class(ground) which are addCardToGround and getSuitATM." />
     <MESSAGE value="Finished the methods of the CardsPlayed class(ground) which are addCardToGround and getSuitATM. Some methods of Player and Hand class are added and changed." />
     <MESSAGE value="From now on main class is not a test class. It creates the game and starts for the player. Some methods of the Deck, Gameplay and Player classes are changed and some of them is filled." />
-    <option name="LAST_COMMIT_MESSAGE" value="From now on main class is not a test class. It creates the game and starts for the player. Some methods of the Deck, Gameplay and Player classes are changed and some of them is filled." />
+    <MESSAGE value="Added all methods to the Gameplay class, Player class and CardPlayed class.  The game has finished mostly. Some exceptional cases can happen sometimes. But the logic is correct." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added all methods to the Gameplay class, Player class and CardPlayed class.  The game has finished mostly. Some exceptional cases can happen sometimes. But the logic is correct." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
